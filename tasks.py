@@ -5,6 +5,8 @@ from colorama import Fore
 from colorama import init as init_colorama
 from invoke import Context, task
 
+import fix_invoke as _    # noqa, hack for invoke to work
+
 
 def get_pep8_compliant_name(project_name: str) -> str:
     return project_name.replace('-', '_')
